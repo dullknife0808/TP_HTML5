@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Réservation</title>
+        <meta name="author" content="First Name Last Name" >
+        <meta name="description" content="Short Description of the page contents for SEO purposes" >
+        <link rel="stylesheet" href="style/reservation.css">
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+        <script src="https://use.fontawesome.com/639c474b7d.js"></script>
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--logo cliquable en forme de drapeau-->
+        <header>
+            <a href="index.html"><img src="images/logo3.png" alt="logo drapeau cote d'ivoire" id="logo"></a>
+            <!--navigation proposant differentes langues-->
+            <nav id="langue">
+                <ul>
+                    <li><a href="" class="langue">English</a></li>
+                    <li><a href="" class="langue">Español</a></li>
+                </ul>
+            </nav>
+
+            <!--navigation réseaux sociaux-->
+            <nav id="social">
+                <ul>
+                    <li><a href="http://www.facebook.com"><img src="images/facebook.png" alt="icone facebook"></a></li>
+
+                    <li><a href="http://www.instagram.com"><img src="images/insta.png" alt="icone instagram"></a></li>
+
+                    <li><a href="http://www.twitter.com"><img src="images/twitter.png" alt="icone twitter"></a></li>
+
+                    <li><a href="http://www.youtube.com"><img src="images/youtube.png" alt="icone youtube"></a></li>
+
+                </ul>
+            </nav>
+
+            <!--barre de navigation du menu principal du site-->
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html" target="blank">Accueil</a></li>
+                    <li><a href="produits.html" target="blank">Catalogue produits</a></li>
+                    <li><a href="description.html" target="blank">Description</a></li>
+                    <li><a href="reservation.html" target="blank">Reservation</a></li>
+                </ul>
+            </nav>
+        </header>
+        <body>
+        <main>
+            <div id="voyage">
+                    <h1>Formulaire de demande de reservation</h1>
+                    <form action="process.php" method="post">
+                        <fieldset id="coordonnees">
+                            <legend>Informations personnelles</legend>
+                            <ul>
+                                <!-- on associe le libelle label au champ de formulaire input grace a l'attribut for qui doit prendre comme valeur la valeur de l'id de l'input. Maniere recommandee-->
+                                <li>
+                                    <label for="nom">Nom</label>
+                                    <input type="text" id="nom" name="nom" pattern="[A-Za-z]{2,25}" title="Veuillez entrer uniquement des lettres svp" placeholder="Ex.Sane"/>
+                                </li>
+
+                                <li>
+                                    <label for="prenom">Prenom</label>
+                                    <input type="text" id="prenom" name="prenom" pattern="[A-Za-z]{2,25}" title="Veuillez entrer uniquement des lettres svp"/>
+                                </li>
+
+                                <li>
+                                    <label for="adresse">Adresse</label>
+                                    <input type="text" id="adresse" name="adresse"/>
+                                </li>
+                                <!--nouveau en html5 champ de saisie d1 adresse mail-->
+                                <li>
+                                    <label for="code-postal">Code postal</label>
+                                    <input type="text" id="code-postal" name="code-postal"/>
+                                </li>
+                                <li>
+                                    <label for="province-etat">Province/Etat</label>
+                                    <input type="text" id="province-etat" name="province-etat"/>
+                                </li>
+                                <li>
+                                    <label for="pays">Pays</label>
+                                    <input type="text" id="pays" name="pays"/>
+                                </li>
+                                <li>
+                                    <label for="telephone">Telephone</label>
+                                    <input type="tel" id="telephone" name="telephone" placeholder="514-555-5555"
+                                           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                           required/>
+                                </li>
+                                <li>
+                                    <label for="email">Courriel</label>
+                                    <input type="email" id="email" name="email"/>
+                                </li>
+
+                            </ul>
+                        </fieldset>
+                        <fieldset id="reservation">
+                            <legend>Informations concernant la réservation</legend>
+                            <ul>
+                                <!-- on associe le libelle label au champ de formulaire input grace a l'attribut for qui doit prendre comme valeur la valeur de l'id de l'input. Maniere recommandee-->
+                                <li class="calendrier">
+                                    <label for="debut-sejour">Début du séjour</label>
+                                    <input type="text" id="debut-sejour" name="debut-sejour" />
+                                </li>
+
+                                <li class="calendrier">
+                                    <label for="fin-sejour">Fin du séjour</label>
+                                    <input type="text" id="fin-sejour" name="fin-sejour"/>
+                                </li>
+
+                                <li class="calendrier">
+                                    <label for="adultes">Nombre d'adultes</label>
+                                    <input type="text" id="adultes" name="adultes"/>
+                                </li>
+                                <!--nouveau en html5 champ de saisie d1 adresse mail-->
+                                <li class="calendrier">
+                                    <label for="enfants">Nombre d'enfants</label>
+                                    <input type="text" id="enfants" name="enfants"/>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset id="hebergement">
+                            <ul>
+                                <li>
+                                    <span>Type d'hebergement</span>
+                                    <select>
+                                        <option selected>Pension complète</option>
+                                        <option>Demi-pension</option>
+                                        <option>Petit-déjeuner</option>
+                                    </select>
+                                </li>
+                                <li>
+									<span>Type de vacances:<span>
+
+										<input type="radio" id="r-naturelles" name="vacances" value="r-naturelles" checked />
+										<label for="r-naturelles">Réserves naturelles</label>
+
+										<input type="radio" id="bord-de-mer" name="vacances" value="bord-de-mer"/>
+										<label for="bord-de-mer">Bord de mer</label>
+
+										<input type="radio" id="ville" name="vacances" value="ville"/>
+										<label for="ville">Villes et villages</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset id="voscommentaires">
+                            <input type="checkbox" id="offres" name="offres" value="offres" checked />
+                            <span>Je souhaite recevoir les offres promotionnelles</span>
+
+                            <div id="textarea">
+                                <label for="message">Questions et commentaires:</label>
+                                <textarea id="message" name="message" placeholder="votre message ici">
+											</textarea>
+                            </div>
+                        </fieldset>
+                        <div>
+                            <!--bouton de soumission du formulaire-->
+                            <input type="submit" value="soumettre" id="submit"/>
+                        </div>
+                    </form>
+            </div>
+        </main>
+        </body>
+        <!--footer regroupant les autres destinations proposees-->
+        <footer>
+            <div><small><p>Copyright &copy 2017 * FancyCakes - Tous droits reservés</p></small></div>
+        </footer>
+    </body>

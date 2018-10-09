@@ -1,0 +1,251 @@
+/*MAIN StyleSheet*/
+
+/* Déclarations attributs généraux de la page */
+article, aside, details, figcaption, figure, footer, header, main, nav, section{
+    display:block;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    font-family:Verdana, Arial, sans-serif;
+}
+
+/* Header */
+#logo{
+    margin:10px;
+    max-height:100%;
+    max-width:100%;
+}
+header{
+    position:relative;
+}
+
+body{
+    background-color: grey;
+    background-attachment:fixed;
+    margin:0;
+}
+
+#ivorytrip>img{
+    display:block;
+    width:33%;
+    position:absolute;
+    left:33%;
+    top:35%;
+}
+
+#langue ul{
+    list-style:none;
+    padding-left:0;
+}
+#menu ul{
+    list-style:none;
+    padding-left:0;
+    width:77%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    background-color:red;
+    border:3px solid black;
+}
+
+#langue{
+    position:absolute;
+    top:0;
+    right:30%;
+}
+#langue li{
+    float:left;
+    margin:10px;
+    font-weight:bold;
+    font-size:15px;
+}
+#langue>a{
+    display:block;
+}
+.langue{
+    text-decoration:none;
+    text-align:center;
+    color:#000;
+}
+#social>ul{
+    padding-left:0;
+    list-style:none;
+    position:absolute;
+    right:50px;
+    top:20px;
+}
+
+#social li{
+    float:left;
+    margin:5px;
+}
+
+#menu li{
+    background-color:rgba(255,255,255,0.7);
+    width:18%;
+    float:left;
+    margin:3%;
+    border-radius:10px;
+}
+
+#menu a:link{
+
+}
+#menu a:visited{
+    background-color:olive;
+}
+#menu a:hover{
+    background-color:yellow;
+}
+#menu a:active{
+    background-color:red;
+}
+
+#menu a{
+    display:block;
+    text-align:center;
+    padding:10px 10px;
+    text-decoration:none;
+    color:#000;
+}
+/* end header */
+
+/* Main */
+main a{
+    text-decoration:none;
+    display:block;
+}
+
+article>a:link{
+    color:darkmagenta;
+}
+article>a:visited{
+    color:rgba(100,100,0,1);
+}
+article>a:hover{
+    color: rgb(225, 154, 223);
+}
+article>a:active{
+    color:rgba(150,165,0,1);
+}
+
+p{
+    word-wrap:break-word;
+    text-align:justify;
+}
+
+main{
+    max-width:100%;
+    margin-top:125px;
+}
+
+h1{
+    text-align:center;
+}
+
+article{
+    margin:2% 4%;
+    padding:2%;
+}
+
+#safari>article{
+    width:25%;
+    display:inline-block;
+}
+#bord-de-mer>article{
+    width:25%;
+    display:inline-block;
+}
+#monuments>article{
+    width:25%;
+    display:inline-block;
+}
+#cake>article{
+    width:25%;
+    display:inline-block;
+}
+
+#safari, #bord-de-mer, #monuments, #cake{
+    width:85%;
+    margin:0 auto;
+}
+
+article img{
+    text-align:center;
+    max-width:100%;
+    border:1px solid black;
+    border-radius:35px;
+}
+article img {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+article img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+/* end main */
+
+/* Footer */
+/* Footer */
+
+footer{
+    background-color:rgba(0,0,0,0.3);
+    clear:both;
+    border:5px solid black;
+}
+
+footer ul{
+    list-style:none;
+    padding-left:0;
+
+}
+footer ul{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+footer ul>li{
+    width:33%;
+    float:left;
+    margin-bottom:20px;
+
+}
+footer li>a{
+    text-align:center;
+    position:relative;
+    left:200px;
+    text-decoration:none;
+    color:grey;
+    font-weight:bold;
+}
+
+footer li>a:link{
+
+}
+footer li>a:visited{
+    color:rgba(100,100,0,1);
+}
+footer li>a:hover{
+    color:rgba(225,150,0,1);
+}
+footer li>a:active{
+    color:rgba(150,165,0,1);
+}
+
+footer p{
+    clear:both;
+    text-align:center;
+}
+footer>h2{
+    margin-left:15px;
+    color:grey;
+}
+/* end footer */
