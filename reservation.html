@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Réservation</title>
-        <meta name="author" content="First Name Last Name" >
-        <meta name="description" content="Short Description of the page contents for SEO purposes" >
-        <link rel="stylesheet" href="style/reservation.css">
+        <meta name="author" content="First Name Last Name">
+        <meta name="description" content="Short Description of the page contents for SEO purposes">
+        <link rel="stylesheet" href="style/main.css">
         <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
         <script src="https://use.fontawesome.com/639c474b7d.js"></script>
         <!--[if lt IE 9]>
@@ -13,9 +13,9 @@
         <![endif]-->
     </head>
     <body>
-        <!--logo cliquable en forme de drapeau-->
         <header>
-            <a href="index.html"><img id="log" src="images/logo3.png" alt="logo drapeau cote d'ivoire" id="logo"></a>
+            <!-- Enseigne "FancyCakes" -->
+            <div id="logo"><img id="log" src="images/logo3.png" alt="vintageco"></div>
             <!--navigation proposant differentes langues-->
             <nav id="langue">
                 <ul>
@@ -24,7 +24,6 @@
                     <li><a href="" class="langue">Español</a></li>
                 </ul>
             </nav>
-
             <!--navigation réseaux sociaux-->
             <nav id="social">
                 <ul>
@@ -38,7 +37,7 @@
 
                 </ul>
             </nav>
-
+            <!--barre de navigation du menu principal du site-->
             <!--barre de navigation du menu principal du site-->
             <nav id="menu">
                 <ul>
@@ -49,43 +48,45 @@
                 </ul>
             </nav>
         </header>
-        <body>
         <main>
-                    <h1>Demande de reservation</h1>
+            <h1>Demande de reservation</h1>
             <div id="voyage">
-                    <form action="process.php" method="post">
-                        <fieldset id="coordonnees">
-                            <legend>Informations personnelles</legend>
-                            <ul>
-                                <!-- on associe le libelle label au champ de formulaire input grace a l'attribut for qui doit prendre comme valeur la valeur de l'id de l'input. Maniere recommandee-->
-                                <li>
-                                    <label for="nom">Nom</label>
-                                    <input type="text" id="nom" name="nom" pattern="[A-Za-z]{2,25}" title="Veuillez entrer uniquement des lettres svp" placeholder="Ex.Sane"/>
-                                </li>
+                <form action="process.php" method="post">
+                    <fieldset id="coordonnees">
+                        <legend>Informations personnelles</legend>
+                        <ul>
+                            <!-- on associe le libelle label au champ de formulaire input grace a l'attribut for qui doit prendre comme valeur la valeur de l'id de l'input. Maniere recommandee-->
+                            <li>
+                                <label for="nom">Nom</label>
+                                <input type="text" id="nom" name="nom" pattern="[A-Za-z]{2,25}"
+                                       title="Veuillez entrer uniquement des lettres svp" placeholder="Ex.Sane"/>
+                            </li>
 
-                                <li>
-                                    <label for="prenom">Prenom</label>
-                                    <input type="text" id="prenom" name="prenom" pattern="[A-Za-z]{2,25}" title="Veuillez entrer uniquement des lettres svp"/>
-                                </li>
+                            <li>
+                                <label for="prenom">Prenom</label>
+                                <input type="text" id="prenom" name="prenom" pattern="[A-Za-z]{2,25}"
+                                       title="Veuillez entrer uniquement des lettres svp"/>
+                            </li>
 
-                                <li>
-                                    <label for="telephone">Telephone</label>
-                                    <input type="tel" id="telephone" name="telephone" placeholder="514-555-5555"
-                                           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                           required/>
-                                </li>
-                                <li>
-                                    <label for="email">Courriel</label>
-                                    <input type="email" id="email" name="email"/>
-                                </li>
+                            <li>
+                                <label for="telephone">Telephone</label>
+                                <input type="tel" id="telephone" name="telephone" placeholder="514-555-5555"
+                                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                       required/>
+                            </li>
+                            <li>
+                                <label for="email">Courriel</label>
+                                <input type="email" id="email" name="email"/>
+                            </li>
 
-                                <li>
-                                    <label for="nombre">Quel est votre age</label>
-                                    <input type="number" id="nombre" name="nombre"/>
-                                </li>
+                            <li>
+                                <label for="nombre">Quel est votre age</label>
+                                <input type="number" id="nombre" name="nombre"/>
+                            </li>
 
-                                <li>
-                                Vous preferez la <input list="parfum">
+                            <li>
+                                <label for="prefere">Vous preferez la </label>
+                                <input list="parfum" id="prefere">
                                 <datalist id="parfum">
                                     <option value="vanille">
                                     <option value="Fraise">
@@ -93,45 +94,50 @@
                                     <option value="Mangue">
                                     <option value="Pistache">
                                 </datalist>
-                                </li>
-                            </ul>
-                        </fieldset>
+                            </li>
+                        </ul>
+                    </fieldset>
 
-                        <fieldset id="hebergement">
-                            <ul>
-                                <li>
-									<span>Comment voulez-vous récuperer votre commande :</span>
+                    <fieldset id="hebergement">
+                        <ul>
+                            <li>
+                                <span>Comment voulez-vous récuperer votre commande :</span>
 
-										<input type="radio" id="emporter" name="choix" value="emporter" checked />
-										<label for="emporter">Emporter</label>
+                                <input type="radio" id="emporter" name="choix" value="emporter" checked/>
+                                <label for="emporter">Emporter</label>
 
-										<input type="radio" id="livraison" name="choix" value="livraison"/>
-										<label for="livraison">Livraison</label>
-                                </li>
-                            </ul>
-                        </fieldset>
-                        <fieldset id="voscommentaires">
-                            <input type="checkbox" id="offres" name="offres" value="offres" checked />
-                            <span>Je souhaite recevoir les offres promotionnelles</span>
+                                <input type="radio" id="livraison" name="choix" value="livraison"/>
+                                <label for="livraison">Livraison</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset id="voscommentaires">
+                        <input type="checkbox" id="offres" name="offres" value="offres" checked/>
+                        <span>Je souhaite recevoir les offres promotionnelles</span>
 
-                            <br>
+                        <br>
 
-                            <div id="textarea">
-                                <label for="message">Questions et commentaires:</label>
-                                <textarea id="message" name="message" placeholder="votre message ici">
+                        <div id="textarea">
+                            <label for="message">Questions et commentaires:</label>
+                            <textarea id="message" name="message" placeholder="votre message ici">
 											</textarea>
-                            </div>
-                        </fieldset>
-                        <div>
-                            <!--bouton de soumission du formulaire-->
-                            <input type="submit" value="soumettre" id="submit"/>
                         </div>
-                    </form>
+                    </fieldset>
+                    <div>
+                        <!--bouton de soumission du formulaire-->
+                        <input type="submit" value="soumettre" id="submit"/>
+                    </div>
+                </form>
+            </div>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.2996041425918!2d-73.64285294944264!3d45.54429823601447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc918e0c061b07f%3A0x49f7a7eab082269a!2s255+Boul+Cr%C3%A9mazie+E%2C+Montr%C3%A9al%2C+QC+H2M!5e0!3m2!1sfr!2sca!4v1508435958291"  frameborder="2" style="border:solid" allowfullscreen></iframe>
             </div>
         </main>
-        </body>
-        <!--footer regroupant les autres destinations proposees-->
-        <footer>
-            <div><small><p>Copyright &copy 2017 * FancyCakes - Tous droits reservés</p></small></div>
-        </footer>
     </body>
+    <!--footer regroupant les autres destinations proposees-->
+    <footer>
+        <div>
+            <small><p>Copyright &copy 2017 * FancyCakes - Tous droits reservés</p></small>
+        </div>
+    </footer>
+</html>
