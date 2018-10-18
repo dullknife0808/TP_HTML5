@@ -2,179 +2,169 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Produits</title>
+        <title>Bienvenue a la patisserie Fancy Cakes</title>
         <meta name="author" content="First Name Last Name" >
         <meta name="description" content="Short Description of the page contents for SEO purposes" >
+        <meta property="og:title" content="Bienvenue a la patisserie Fancy Cakes" />
+        <meta property="og:site_name" content="FancyCakes" />
+        <meta property="og:image" content="http://localhost:63342/P88_HTML_avance/Exercices/TP/TP_HTML5/images/logo3.jpg" />
         <link rel="stylesheet" href="style/main.css">
         <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+                crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/639c474b7d.js"></script>
-
         <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <![endif]-->
     </head>
     <body>
         <header>
-            <!-- Enseigne "FancyCakes" -->
-            <div id="logo"><img id="log" src="images/logo3.png" alt="vintageco"></div>
-            <!--navigation proposant differentes langues-->
-            <nav id="langue">
-                <ul>
-                    <li><a href="" class="langue">English</a></li>
-                    <li> | </li>
-                    <li><a href="" class="langue">Español</a></li>
-                </ul>
-            </nav>
-            <!--navigation réseaux sociaux-->
-            <nav id="social">
-                <ul>
-                    <li><a href="http://www.facebook.com"><img src="images/facebook.png" alt="icone facebook"></a></li>
-
-                    <li><a href="http://www.instagram.com"><img src="images/insta.png" alt="icone instagram"></a></li>
-
-                    <li><a href="http://www.twitter.com"><img src="images/twitter.png" alt="icone twitter"></a></li>
-
-                    <li><a href="http://www.youtube.com"><img src="images/youtube.png" alt="icone youtube"></a></li>
-
-                </ul>
-            </nav>
-            <!--barre de navigation du menu principal du site-->
-            <!--barre de navigation du menu principal du site-->
-            <nav id="menu">
-                <ul>
-                    <li><a href="index.html" target="blank">Accueil</a></li>
-                    <li><a href="produits.html" target="blank">Produits</a></li>
-                    <li><a href="description.html" target="blank">Description</a></li>
-                    <li><a href="reservation.html" target="blank">Reservation</a></li>
+            <div class="mobile-nav">
+                <!-- menu hamburger fait en html et css -->
+                <div class="menu-btn" id="menu-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav>
+                <ul class="row noshow">
+                    <li class="col-3 col-m-3"><a href="index.html">Accueil</a></li>
+                    <li class="col-3 col-m-3"><a href="produits.html">Produits</a></li>
+                    <li class="col-3 col-m-3"><a href="description.html">Description</a></li>
+                    <li class="col-3 col-m-3"><a href="reservation.html">Reservation</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <!-- Catégorie Safari -->
-            <section id="safari">
-                <article>
-                    <a href="description.html" title="Voir les détails">
-                        <div class="image-site"><img src="images/gateau8.jpg" alt=""></div>
-                        <div class="mini-detail">
-                            <h2>Gateaux sans gluten1</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
-                        </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="description.html" title="Voir les détails">
-                        <div class="image-site"><img src="images/gateau8.jpg" alt=""></div>
-                        <div class="mini-detail">
-                            <h2>Gateaux sans gluten2</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
-                        </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="description.html" title="Voir les détails">
-                        <div class="image-site"><img src="images/gateau8.jpg" alt=""></div>
-                        <div class="mini-detail">
-                            <h2>Gateaux sans gluten3</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
-                        </div>
-                    </a>
-                </article>
-            </section>
-
-            <!-- Catégorie Bord de mer -->
-            <section id="bord-de-mer">
-                <article>
-                    <a href="description.html" title="Voir les détails">
-                        <div class="image-site"><img src="images/gateau4.jpg" alt=""></div>
-                        <div class="mini-detail">
-                            <h2>Gateaux au chocolat1</h2>
-                            <p>La galette des rois est une galette traditionnellement élaborée et consommée dans une majeure partie de la France, au Québec, en Acadie, en Suisse, au Luxembourg, en Belgique et au Liban à l'occasion de l’Épiphanie. Ut...</p>
-                        </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="description.html" title="Voir les détails">
-                        <div class="image-site"><img src="images/gateau4.jpg" alt=""></div>
-                        <div class="mini-detail">
-                            <h2>Gateaux au chocolat2</h2>
-                            <p>La galette des rois est une galette traditionnellement élaborée et consommée dans une majeure partie de la France, au Québec, en Acadie, en Suisse, au Luxembourg, en Belgique et au Liban à l'occasion de l’Épiphanie. Ut...</p>
-                        </div>
-                    </a>
-                </article><article>
-                <a href="description.html" title="Voir les détails">
-                    <div class="image-site"><img src="images/gateau4.jpg" alt=""></div>
-                    <div class="mini-detail">
-                        <h2>Gateaux au chocolat3</h2>
-                        <p>La galette des rois est une galette traditionnellement élaborée et consommée dans une majeure partie de la France, au Québec, en Acadie, en Suisse, au Luxembourg, en Belgique et au Liban à l'occasion de l’Épiphanie. Ut...</p>
-                    </div>
-                </a>
-            </article>
-            </section>
-
-            <!-- Catégorie Vieilles villes et monuments -->
-            <section id="monuments">
-                <article>
-                    <a href="description.html" title="Voir les détails">
-                        <div class="image-site"><img src="images/gateau7.jpg" alt=""></div>
-                        <div class="mini-detail">
-                            <h2>Gateaux aux fruits1</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
-                        </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="description.html" title="Voir les détails">
-                        <div class="image-site"><img src="images/gateau7.jpg" alt=""></div>
-                        <div class="mini-detail">
-                            <h2>Gateaux aux fruits2</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
-                        </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="description.html" title="Voir les détails">
-                        <div class="image-site"><img src="images/gateau7.jpg" alt=""></div>
-                        <div class="mini-detail">
-                            <h2>Gateaux aux fruits3</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
-                        </div>
-                    </a>
-                </article>
-            </section>
-            <!-- Catégorie Vieilles villes et monuments -->
-            <section id="cake">
-                <article>
-                    <a href="description.html" title="Voir les détails">
-                        <div class="image-site"><img src="images/gateau11.jpg" alt=""></div>
-                        <div class="mini-detail">
-                            <h2>Gateaux sans oeufs1</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
-                        </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="description.html" title="Voir les détails">
-                        <div class="image-site"><img src="images/gateau11.jpg" alt=""></div>
-                        <div class="mini-detail">
-                            <h2>Gateaux sans oeufs2</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
-                        </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="description.html" title="Voir les détails">
-                        <div class="image-site"><img src="images/gateau11.jpg" alt=""></div>
-                        <div class="mini-detail">
-                            <h2>Gateaux sans oeufs3</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
-                        </div>
-                    </a>
-                </article>
-            </section>
+            <div id="main_contenu" class="row">
+                <div id="articles" class="col-12">
+                    <section class="row">
+                        <article class="col-4">
+                                <a href="description.html" title="Voir les détails">
+                                    <img src="images/gateau8.jpg" alt="">
+                                    <div class="mini-detail">
+                                        <h2>Gateaux sans gluten1</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="col-4">
+                                <a href="description.html" title="Voir les détails">
+                                    <img src="images/gateau8.jpg" alt="">
+                                    <div class="mini-detail">
+                                        <h2>Gateaux sans gluten2</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="col-4">
+                                <a href="description.html" title="Voir les détails">
+                                    <img src="images/gateau8.jpg" alt="">
+                                    <div class="mini-detail">
+                                        <h2>Gateaux sans gluten3</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
+                                    </div>
+                                </a>
+                            </article>
+                        <article class="col-4">
+                            <a href="description.html" title="Voir les détails">
+                                <div class="image-site"><img src="images/gateau4.jpg" alt=""></div>
+                                <div class="mini-detail">
+                                    <h2>Gateaux au chocolat1</h2>
+                                    <p>La galette des rois est une galette traditionnellement élaborée et consommée dans une majeure partie de la France, au Québec, en Acadie, en Suisse, au Luxembourg, en Belgique et au Liban à l'occasion de l’Épiphanie. Ut...</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="col-4">
+                            <a href="description.html" title="Voir les détails">
+                                <div class="image-site"><img src="images/gateau4.jpg" alt=""></div>
+                                <div class="mini-detail">
+                                    <h2>Gateaux au chocolat2</h2>
+                                    <p>La galette des rois est une galette traditionnellement élaborée et consommée dans une majeure partie de la France, au Québec, en Acadie, en Suisse, au Luxembourg, en Belgique et au Liban à l'occasion de l’Épiphanie. Ut...</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="col-4">
+                        <a href="description.html" title="Voir les détails">
+                            <div class="image-site"><img src="images/gateau4.jpg" alt=""></div>
+                            <div class="mini-detail">
+                                <h2>Gateaux au chocolat3</h2>
+                                <p>La galette des rois est une galette traditionnellement élaborée et consommée dans une majeure partie de la France, au Québec, en Acadie, en Suisse, au Luxembourg, en Belgique et au Liban à l'occasion de l’Épiphanie. Ut...</p>
+                            </div>
+                        </a>
+                    </article>
+                        <article class="col-4">
+                            <a href="description.html" title="Voir les détails">
+                                <div class="image-site"><img src="images/gateau7.jpg" alt=""></div>
+                                <div class="mini-detail">
+                                    <h2>Gateaux aux fruits1</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="col-4">
+                            <a href="description.html" title="Voir les détails">
+                                <div class="image-site"><img src="images/gateau7.jpg" alt=""></div>
+                                <div class="mini-detail">
+                                    <h2>Gateaux aux fruits2</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="col-4">
+                            <a href="description.html" title="Voir les détails">
+                                <div class="image-site"><img src="images/gateau7.jpg" alt=""></div>
+                                <div class="mini-detail">
+                                    <h2>Gateaux aux fruits3</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
+                                </div>
+                            </a>
+                        </article>
+                    <!-- Catégorie Vieilles villes et monuments -->
+                        <article class="col-4">
+                            <a href="description.html" title="Voir les détails">
+                                <div class="image-site"><img src="images/gateau11.jpg" alt=""></div>
+                                <div class="mini-detail">
+                                    <h2>Gateaux sans oeufs1</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="col-4">
+                            <a href="description.html" title="Voir les détails">
+                                <div class="image-site"><img src="images/gateau11.jpg" alt=""></div>
+                                <div class="mini-detail">
+                                    <h2>Gateaux sans oeufs2</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="col-4">
+                            <a href="description.html" title="Voir les détails">
+                                <div class="image-site"><img src="images/gateau11.jpg" alt=""></div>
+                                <div class="mini-detail">
+                                    <h2>Gateaux sans oeufs3</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
+                                </div>
+                            </a>
+                        </article>
+                    </section>
+                </div>
+            </div>
         </main>
-        <!--footer regroupant les autres destinations proposees-->
         <footer>
-            <div><small><p>Copyright &copy 2017 * FancyCakes - Tous droits reservés</p></small></div>
+            <p>Copyright &copy 2017 * FancyCakes - Tous droits reservés</p>
         </footer>
+        <script>
+            // script pour masquer et afficher le menu mobile
+            $(document).ready(function(){
+                $('#menu-hamburger').click(function(){
+                    $('nav ul').toggleClass('noshow');
+                });
+            });
+        </script>
     </body>
 </html>

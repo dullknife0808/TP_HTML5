@@ -1,290 +1,24 @@
 /*MAIN StyleSheet*/
-
-article, aside, details, figcaption, figure, footer, header, main, nav, section{
-    display:block;
-}
-
 *{
     box-sizing:border-box;
 }
 
-html{
-    font-family:Verdana, Arial, sans-serif;
-}
-
-header{
-    position:relative;
-    background-color: grey;
-}
+article, aside, details, figcaption, figure, footer, header, main, nav, section { display: block; }
 
 body{
-    background-color: grey;
-    background-attachment:fixed;
     margin:0;
+    background-color: rgb(239,234,204);
 }
 
-#logo{
-    margin:10px;
-}
-
-#langue ul{
-    list-style:none;
-    padding-left:0;
-}
-
-#langue{
-    position:absolute;
-    top:0;
-    right:41%;
-}
-#langue li{
-    float:left;
-    margin:10px;
-    font-weight:bold;
-    font-size:15px;
-}
-#langue>a{
-    display:block;
-
-
-}
-.langue{
-    text-decoration:none;
-    text-align:center;
-    color:#000;
-}
-#social>ul{
-    padding-left:0;
-    list-style:none;
-    position:absolute;
-    right:50px;
-    top:20px;
-}
-
-#social li{
-    float:left;
-    margin:5px;
-}
-
-#menu{
-    position: absolute;
-    top: 100px;
-    left: 20%;
-    width: 80%;
-}
-
-#menu li{
-    background-color: rgba(255,255,255,0.7);
-    width: 20%;
-    float: left;
-    margin: 10px;
-    border-radius: 10px;
-    list-style: none;
-}
-
-#menu li:link{
-
-}
-#menu li:visited{
-    background-color:olive;
-}
-#menu li:hover{
-    background-color:yellow;
-}
-#menu li:active{
-    background-color:yellow;
-}
-
-#menu a{
-    display:block;
-    text-align:center;
-    padding:10px 10px;
-    text-decoration:none;
-    color:#000;
-}
-
-clear{:both;
-    max-width:100%;
-}
-
-#banniere>img{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom:25px;
-    max-width:100%;
-    border-radius:150px;
-    height: 650px;
-    /* border:5px solid grey; */
-}
-
-#submain>section{
-    width:98%;
-    background-color:rgba(0,0,0,0.3);
-    margin:1%;
-    border:3px solid grey;
+header, footer{
+    background-color:rgb(78,32,8);
     color:white;
 }
-
-
-#submain{
-    position:relative;
-}
-
-#textarea{
-    width:70%;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom:5px;
-    margin-top:5px;
-}
-form{
-    margin:1%;
-}
-
-fieldset{
-    background-color:rgba(0,0,0,0.2);
-    width:365px;
-    border-radius:15px 15px 0 0;
-}
-
-#map{
-    width:50%;
-    margin:5px;
-}
-
+/***************************************************************************************************/
 h2 {
-    font-size: 25px;
-    text-align: center;
+    color: rgb(75,73,52);
 }
 
-/* ------------------------------------------------------------------------------------------------Produits ------------------------------------------------------------------------------------------------*/
-
-/* Main */
-
-article>a:link{
-    color:darkmagenta;
-}
-article>a:visited{
-    color:rgba(100,100,0,1);
-}
-article>a:hover{
-    color: rgb(225, 154, 223);
-}
-article>a:active{
-    color:rgba(150,165,0,1);
-}
-
-p{
-    word-wrap:break-word;
-    text-align:justify;
-}
-
-
-h1{
-    text-align:center;
-}
-
-article{
-    margin:2% 4%;
-}
-
-#safari>article{
-    width:25%;
-    display:inline-block;
-}
-#bord-de-mer>article{
-    width:25%;
-    display:inline-block;
-}
-#monuments>article{
-    width:25%;
-    display:inline-block;
-}
-#cake>article{
-    width:25%;
-    display:inline-block;
-}
-
-#safari, #bord-de-mer, #monuments, #cake{
-    width:85%;
-    margin:0 auto;
-}
-
-article img{
-    text-align:center;
-    max-width:100%;
-    border:1px solid black;
-    border-radius:35px;
-}
-article img {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-}
-
-article img:hover {
-    opacity: 1.0;
-    filter: alpha(opacity=100);
-}
-
-/* ------------------------------------------------------------------------------------------------------description ---------------------------------------------------------------------------------------*/
-
-
-p{
-    word-wrap:break-word;
-    text-align:justify;
-    font-size: 15px;
-}
-
-
-h1 {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-top: 100px;
-    text-align: center;
-    font-size: 50px;
-}
-
-
-article{
-    margin:2% 4%;
-}
-
-#gauche {
-    margin-left: 40%;
-    width: 400px;
-    height: 650px;
-}
-
-#safari>article{
-    width:25%;
-    display:inline-block;
-}
-#bord-de-mer>article{
-    width:25%;
-    display:inline-block;
-}
-#monuments>article{
-    width:25%;
-    display:inline-block;
-}
-
-#safari, #bord-de-mer, #monuments{
-    width:85%;
-    margin:0 auto;
-}
-
-article img{
-    text-align:center;
-    max-width:100%;
-    border:1px solid rgba(50,150,0,1);
-    border-radius:35px;
-}
-
-/*------------------------------------------------------------------------------ reservation ---------------------------------------------------------------------------------------------------------------*/
-
-/* Main */
 fieldset {
     border:0;
     width: 100%;
@@ -363,371 +97,220 @@ textarea{
     font-weight:bold;
 }
 
+#banniere {
+    border-radius: 15px;
+}
+/*********************************************************************************/
+/* système de grille*/
 
-/* ------------------------------------------------------------------------------------Footer --------------------------------------------------------------------------------------------------------------*/
-
-footer{
-    background-color:rgba(0,0,0,0.3);
-    clear:both;
-    border:5px solid black;
+[class*="col-"] {
+    width: 100%;
+    padding: 0 0;
 }
 
-footer ul{
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+/* HEADER*/
+
+/*MENU HAMBURGER*/
+
+#menu-hamburger {
+    padding:10px 0;
+}
+.menu-btn span {
+    width: 50px;
+    height:3px;
+    display:block;
+    background-color:#fff;
+    margin:8px;
+}
+
+
+.noshow{
+    display:none;
+}
+
+nav ul{
     list-style:none;
-    padding-left:0;
-
-}
-footer ul{
-    width:90%;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-footer ul>li{
-    width:33%;
-    float:left;
-    margin-bottom:20px;
-
-}
-footer li>a{
-    text-align:center;
-    position:relative;
-    left:200px;
+    padding:0;
+    color: white;
     text-decoration:none;
-    color:grey;
+    margin:0;
+}
+
+nav ul li{
+    border-top:1px solid white;
+    display:block;
+    height:50px;
+    line-height:50px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration:none;
+    text-transform:uppercase;
     font-weight:bold;
+    width:100%;
+    padding-left:5px;
+    display:block;
 }
 
-footer li>a:link{
-
-}
-footer li>a:visited{
-    color:rgba(100,100,0,1);
-}
-footer li>a:hover{
-    color:rgba(225,150,0,1);
-}
-footer li>a:active{
-    color:rgba(150,165,0,1);
+nav ul li a:hover{
+    background-color:rgb(162,54,7);
 }
 
-footer p{
-    clear:both;
+/* MAIN */
+main{
+    padding:1%;
+}
+
+img{
+    max-width:100%;
+}
+
+/* FOOTER*/
+footer{
+    height:50px;
+    padding:10px;
+    text-transform:uppercase;
     text-align:center;
+    vertical-align:bottom;
 }
-footer>h2{
-    margin-left:15px;
-    color:grey;
+/*************************************************************************************************************************************/
+/*DESKTOP DEVICES*/
+/*************************************************************************************************************************************/
+@media (min-width: 960px) {
+
+/*SYSTEME DE GRILLES********************************************************************************************/
+
+/**on divise la largeur de l'écran en 12 colonnes. Chaque colonne occupe un douzième de la page**************/
+
+/*largeur d'1 colonne*/
+.col-1 {width: 8.33%;}
+
+/*largeur de 2 colonnes*/
+.col-2 {width: 16.66%;}
+
+/*largeur de 3 colonnes*/
+.col-3 {width: 25%;}
+
+/*largeur de 4 colonnes*/
+.col-4 {width: 33.33%;}
+
+/*largeur de 5 colonnes*/
+.col-5 {width: 41.66%;}
+
+/*largeur de 6 colonnes*/
+.col-6 {width: 50%;}
+
+/*largeur de 7 colonnes*/
+.col-7 {width: 58.33%;}
+
+/*largeur de 8 colonnes*/
+.col-8 {width: 66.66%;}
+
+/*largeur de 9 colonnes*/
+.col-9 {width: 75%;}
+
+/*largeur de 10 colonnes*/
+.col-10 {width: 83.33%;}
+
+/*largeur de 11 colonnes*/
+.col-11 {width: 91.66%;}
+
+/*largeur de 12 colonnes*/
+.col-12 {width: 100%;}
+/**on aligne les colonnes les unes à côté des autres avec la propriété float**************/
+[class*="col-"] {
+    float: left;
+    padding: 0 15px;
 }
 
-/*************************************************************************************************************************************/
-/*start SMALL DEVICES*/
-/*************************************************************************************************************************************/
+/**
+    chaque rangée de colonnes doit être enveloppée dans une div de class "row". on applique un clear:both sur chaque row afin d'annuler l'effet de float
+    et éviter que les éléments suivants remontent et entourent le "row"
 
-@media (max-width: 992px)
-{
-    #log{
-        width: 300px;
-        height: 250px;
-    }
-    #menu li {
-        float: none;
-        font-size: 10px;
-    }
-
-    #menu a {
-        width: 100%;
-        font-size: 21px;
-    }
-
-    #menu ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-
-    #banniere>img{
-        display:block;
-        margin-left:auto;
-        margin-right:auto;
-        margin-bottom:25px;
-        max-width:100%;
-        border-radius:50px;
-        height: 350px;
-        /* border:5px solid grey; */
-    }
-
-    #social>ul{
-        padding-left:0;
-        list-style:none;
-        position:absolute;
-        right:110px;
-        top:20px;
-        display: flex;
-        flex-direction: row;
-        margin-top: 50px;
-        margin-right: -35px;
-    }
-
-    #langue ul {
-        margin-right: 10px;
-    }
-
-
-    #langue{
-        position:absolute;
-        top: 0;
-        right:1%;
-    }
-    #langue li{
-        float:left;
-        margin:10px;
-        font-weight:bold;
-        font-size:22px;
-    }
-    #langue>a{
-        display:block;
-    }
-
-    #submain {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+**/
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/*END SYSTEME DE GRILLES*************************************************************************************/
+    .noshow{
+        display: block;
 
     }
 
-    #submain>section {
-        width: 100%;
-        align-self: center;
-    }
-
-    #map{
-        width:50%;
-        margin:5px;
-
-    }
-
-    fieldset {
-        width: 100%;
-    }
-
-    form {
-        align-self: center;
-
-    }
-
-    h2 {
-        font-size: 30px;
-    }
-
-    p {
-        font-size: 25px;
-        text-align: justify;
-    }
-
-    legend {
-        font-size: 25px;
-    }
-
-
-
-
-    /********************* produits ***********************************/
-
-    section img {
-        border-radius: 10px;
-    }
-
-    #safari, #bord-de-mer, #monuments, #cake{
-        width:85%;
-        margin:0 auto;
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    .mini-detail p {
+    .menu-btn {
         display: none;
     }
 
-    h2 {
-        font-size: 11px;
-        text-align: center;
-    }
-
-    /******************************* description *******************************/
-
-    h3 {
-        font-size: 17px;
-    }
-
-    h1 {
-        font-size: 25px;
-    }
-
-    p {
-        font-size: 12px;
-    }
-
-    #desc_p {
-        font-size: 10px;
-    }
-
-    #gauche {
-        width: 200px;
-        height: 300px;
-        margin-left: 170px;
-    }
-
-    /***************************** resservation **************************************/
-
-    ul{
-        list-style:none;
-        padding-left:97px;
-
-    }
-
-    h1 {
-        font-size: 50px;
-    }
-
-    legend {
-        font-size: 35px;
-    }
-
-    textarea{
-        width:60%;
-        vertical-align: top;
-        height: 90px;
-        border-radius:30px;
-    }
-
-    #hebergement span {
-
-        font-size: 27px;
-        margin-right: 14%;
-    }
-
-    #voscommentaires span {
-
-        font-size: 27px;
-
-    }
-
-
-    label {
-        font-size: 30px;
-    }
-    #coordonnees li {
-        margin:15px;
-    }
-    #coordonnees label{
-        display:inline-block;
-        width:100%;
-    }
-    #coordonnees input{
-        height:60px;
-        width:100%;
-        border-radius:5px;
-    }
-
-    #reservation input{
-        height:40px;
-        width:50%;
-        border-radius:15px;
-    }
-
-
-    #reservation ul{
-        margin-left:25%;
-    }
-
-
-    #reservation li {
-        margin:5px;
-    }
-
-    #reservation label{
-        width:30%;
-        display:inline-block;
-        min-width:100px;
-    }
-
-    #hebergement, #voscommentaires {
-        font-size: 20px;
-    }
-
-
-
-    /* Footer */
-    footer{
-        background-color:rgba(0,0,0,0.3);
-        clear:both;
-        border:5px solid black;
-    }
-
-    footer ul{
-        list-style:none;
-        padding-left:0;
-
-    }
-    footer ul{
-        width:90%;
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    footer ul>li{
-        width:33%;
-        float:left;
-        margin-bottom:20px;
-
-    }
-    footer li>a{
-        text-align:center;
-        position:relative;
-        left:200px;
-        text-decoration:none;
-        color:grey;
-        font-weight:bold;
-    }
-
-    footer li>a:link{
-
-    }
-    footer li>a:visited{
-        color:rgba(100,100,0,1);
-    }
-    footer li>a:hover{
-        color:rgba(225,150,0,1);
-    }
-    footer li>a:active{
-        color:rgba(150,165,0,1);
-    }
-
-    footer p{
-        clear:both;
-        text-align:center;
-        font-size: 23px;
-    }
-    footer>h2{
-        margin-left:15px;
-        color:grey;
-    }
-
-
-
-
-
 }
+/*************************************************************************************************************************************/
+/*MEDIUM DEVICES*/
+/*************************************************************************************************************************************/
+@media (min-width: 768px) {
 
+    /*SYSTEME DE GRILLES********************************************************************************************/
 
+    /**on divise la largeur de l'écran en 12 colonnes. Chaque colonne occupe un douzième de la page**************/
 
+    /*largeur d'1 colonne*/
+    .col-m-1 {width: 8.33%;}
 
+    /*largeur de 2 colonnes*/
+    .col-m-2 {width: 16.66%;}
 
+    /*largeur de 3 colonnes*/
+    .col-m-3 {width: 25%;}
 
+    /*largeur de 4 colonnes*/
+    .col-m-4 {width: 33.33%;}
 
+    /*largeur de 5 colonnes*/
+    .col-m-5 {width: 41.66%;}
 
+    /*largeur de 6 colonnes*/
+    .col-m-6 {width: 50%;}
 
+    /*largeur de 7 colonnes*/
+    .col-m-7 {width: 58.33%;}
 
+    /*largeur de 8 colonnes*/
+    .col-m-8 {width: 66.66%;}
+
+    /*largeur de 9 colonnes*/
+    .col-m-9 {width: 75%;}
+
+    /*largeur de 10 colonnes*/
+    .col-m-10 {width: 83.33%;}
+
+    /*largeur de 11 colonnes*/
+    .col-m-11 {width: 91.66%;}
+
+    /*largeur de 12 colonnes*/
+    .col-m-12 {width: 100%;}
+    /**on aligne les colonnes les unes à côté des autres avec la propriété float**************/
+    [class*="col-"] {
+        float: left;
+        padding: 0 15px;
+    }
+
+    /**
+        chaque rangée de colonnes doit être enveloppée dans une div de class "row". on applique un clear:both sur chaque row afin d'annuler l'effet de float
+        et éviter que les éléments suivants remontent et entourent le "row"
+
+    **/
+    .row:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    /*END SYSTEME DE GRILLES*************************************************************************************/
+}

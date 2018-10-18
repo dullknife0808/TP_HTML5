@@ -2,76 +2,76 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>FancyCakes</title>
+        <title>Bienvenue a la patisserie FancyCakes Montréal</title>
         <meta name="author" content="First Name Last Name" >
         <meta name="description" content="Short Description of the page contents for SEO purposes" >
+        <meta property="og:title" content="Bienvenue a la patisserie Fancy Cakes" />
+        <meta property="og:site_name" content="FancyCakes" />
+        <meta property="og:image" content="http://localhost:63342/P88_HTML_avance/Exercices/TP/TP_HTML5/images/logo3.jpg" />
         <link rel="stylesheet" href="style/main.css">
         <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+                crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/639c474b7d.js"></script>
-
         <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <![endif]-->
     </head>
     <body>
         <header>
-            <!-- Enseigne "FancyCakes" -->
-            <div id="logo"><img id="log" src="images/logo3.png" alt="vintageco"></div>
-            <!--navigation proposant differentes langues-->
-            <nav id="langue">
-                <ul>
-                    <li><a href="" class="langue">English</a></li>
-                    <li> | </li>
-                    <li><a href="" class="langue">Español</a></li>
-                </ul>
-            </nav>
-            <!--navigation réseaux sociaux-->
-            <nav id="social">
-                <ul>
-                    <li><a href="http://www.facebook.com"><img src="images/facebook.png" alt="icone facebook"></a></li>
-
-                    <li><a href="http://www.instagram.com"><img src="images/insta.png" alt="icone instagram"></a></li>
-
-                    <li><a href="http://www.twitter.com"><img src="images/twitter.png" alt="icone twitter"></a></li>
-
-                    <li><a href="http://www.youtube.com"><img src="images/youtube.png" alt="icone youtube"></a></li>
-
-                </ul>
-            </nav>
-            <!--barre de navigation du menu principal du site-->
-            <!--barre de navigation du menu principal du site-->
-            <nav id="menu">
-                <ul>
-                    <li><a href="index.html" target="blank">Accueil</a></li>
-                    <li><a href="produits.html" target="blank">Produits</a></li>
-                    <li><a href="description.html" target="blank">Description</a></li>
-                    <li><a href="reservation.html" target="blank">Reservation</a></li>
+            <div class="mobile-nav">
+                <!-- menu hamburger fait en html et css -->
+                <div class="menu-btn" id="menu-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav>
+                <ul class="row noshow">
+                    <li class="col-3 col-m-3"><a href="index.html" target="blank">Accueil</a></li>
+                    <li class="col-3 col-m-3"><a href="produits.html" target="blank">Produits</a></li>
+                    <li class="col-3 col-m-3"><a href="description.html" target="blank">Description</a></li>
+                    <li class="col-3 col-m-3"><a href="reservation.html" target="blank">Reservation</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div id="banniere">
-                <img src="images/logo3.jpg" alt="banniere du site" style="width:75%;">
-            </div>
-            <div id="submain">
-                <section>
-                    <article>
-                        <h2>Qui-sommes nous ?</h2>
-                        <p>Ouvert par Élie et David en 2009 et spécialisé dans les gâteaux tendances et cours de pâtisserie, "Gilles patissier" vous plonge dans un univers décalé, coloré et très gourmand.
+            <div id="main_contenu" class="row">
+                <div id="articles" class="col-9 col-m-9">
+                    <section class="row">
+                        <article class="col-10">
+                            <img src="images/logo3.jpg" id="banniere" class="col-12" alt="photo banniere">
+                        </article >
+                        <article class="col-10">
+                            <h2>Qui sommes-nous ?</h2>
+                            <p>Ouvert par Élie et David en 2009 et spécialisé dans les gâteaux tendances et cours de pâtisserie, "FancyCakes" vous plonge dans un univers décalé, coloré et très gourmand.
                             Dans une même boutique installez vous dans un salon de thé pour déguster de délicieux cupcakes, cake pops, cheesecake, macarons et bien d'autres, commandez votre gâteau à thème en pâte à sucre pour toutes vos occasions et suivez un cours de pâtisserie dans une ambiance ludique et gourmande. Cupcakes, macarons, cake design, cheesecakes, religieuses n'aurons plus de secret pour vous!</p>
-
-                    </article>
-                </section>
-                <div id="video" >
-                    <video width="400" controls>
-                        <source src="videos/Décoration%20de%20gâteau%20facile%20et%20rapide%20-%20Cake%20design.mp4" type="video/mp4">
-                        Your browser does not support HTML5 video.
-                    </video>
+                            <p> De plus nous sommes fier d'annoncer notre partenariat avec Pierre Hermé qui à l’heure actuelle, dispose de 47 boutiques situées dans 12 pays du globe. Déjà élu meilleur pâtissier français en 2007, l’homme, en plus d’être une légende vivante dans son domaine, a pleinement contribué à l’engouement pour la pâtisserie haut de gamme. En 2014, il signe même une tribune où il explique comment réaliser son propre œuf de Pâque haut de gamme. Non satisfait d’être un prodige de la cuisine, Pierre Hermé est aussi un homme des plus généreux. Le chef français Alain Passard a également été récompensé mardi soir par le prix «Lifetime Achievement» qui récompense l’ensemble de sa carrière et son restaurant «Arpège» se classe à la 19e place du classement.Le chef français Alain Passard a également été récompensé mardi soir par le prix «Lifetime Achievement» qui récompense l’ensemble de sa carrière et son restaurant «Arpège» se classe à la 19e place du classement.Le chef français Alain Passard a également été récompensé mardi soir Le chef français Alain français</p>
+                        </article>
+                    </section>
                 </div>
+                <aside class="col-3 col-m-3">
+                    <h2>Notre parrain</h2>
+                    <img src="images/parrain.jpg"  alt="photo recompense">
+                    <p>Il avait déjà son nom dans le Larousse et sa statue au musée Grévin à Paris, Pierre Hermé, surnommé le « Roi du maca­ron » vient d’obte­nir la plus pres­ti­gieuse des récom­penses, celle de « meilleur pâtissier du monde » par le « World’s 50 Best Restaurants », un classement annuel établi par 972 experts internationaux, auteurs, critiques gastronomiques, chefs et restaurateurs. Pour cette année 2016, c’est le restaurant italien « Osteria Francescana » qui remporte le prix du meilleur établissement. Le pâtissier Français A bâti son empire sucré sur ses macarons aux associations de saveurs inédites, plébiscités par les gourmets à Paris, Tokyo ou Dubaï. Dans un tweet, Pierre Hermé se dit « honoré de recevoir ce titre et espère continuer à surprendre les gourmets du monde entier ».</p>
+                    <p>Si ce pâtissier amateur d’art et de design propose des collections de chocolats, tartes et cakes sans cesse renouvelées, il est surtout associé au macaron, qu’il vend 2,10 euros l’unité.
+                        Une douceur que Pierre Hermé, qui a commencé sa carrière à 14 ans auprès de Gaston Lenôtre, en 1976, avant de rejoindre Fauchon quelques années plus tard, n’aimait pas au départ. « Je trouvais ça trop sucré », dit-il. « Ce qui m’a donné envie de travailler le macaron, c’est qu’il n’y avait alors pas grand-chose, juste du café, du chocolat, et de la vanille. Je me suis dit qu’il y avait vraiment un champ de créativité à explorer », raconte-t-il à l’AFP, dans son bureau lumineux près du parc Monceau</p>
+                </aside>
             </div>
         </main>
         <footer>
-            <div><small><p>Copyright &copy 2017 * FancyCakes - Tous droits reservés</p></small></div>
+            <p>Copyright &copy 2017 * FancyCakes - Tous droits reservés</p>
         </footer>
+        <script>
+            // script pour masquer et afficher le menu mobile
+            $(document).ready(function(){
+                $('#menu-hamburger').click(function(){
+                    $('nav ul').toggleClass('noshow');
+                });
+            });
+        </script>
     </body>
 </html>
